@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="./assets/js/script.js"></script>
+    <title>Keyword Training</title>
+  </head>
+  <body
+    class="m-2 flex h-full min-h-screen flex-col bg-machine bg-cover bg-center bg-no-repeat text-lg text-[#0E063A]"
+  >
+    <header
+      class="mb-2 rounded-3xl bg-white/90 py-4 text-center shadow-2xl drop-shadow-2xl"
+    >
+      <h1 class="text-4xl font-extrabold">Keyword Training</h1>
+      <h2 class="px-4 py-2 text-2xl font-semibold">
+        Créez un compte pour vous entrainer avec vos propres texte !!!
+      </h2>
+      <nav>
+        <button
+          class="mt-2 rounded-lg border-2 border-gray-400 bg-amber-300 px-2"
+        >
+          Connexion
+        </button>
+      </nav>
+    </header>
+    <main class="flex flex-grow flex-col items-center justify-center gap-2">
+      <div
+        class="flex w-full flex-col gap-2 rounded-xl bg-white/90 px-8 py-5 shadow-2xl drop-shadow-2xl sm:w-10/12 lg:w-1/2"
+      >
+        <h3 class="text-center text-xl font-bold">Choisis un niveau :</h3>
+        <div class="flex justify-center gap-2">
+          <button
+            id="easy"
+            class="w-fit rounded-lg border-2 border-solid border-gray-400 bg-amber-300 px-2 font-bold"
+          >
+            Facile
+          </button>
+          <button
+            id="middle"
+            class="w-fit rounded-lg border-2 border-solid border-gray-400 bg-amber-300 px-2 font-bold"
+          >
+            Moyen
+          </button>
+          <button
+            id="hard"
+            class="w-fit rounded-lg border-2 border-solid border-gray-400 bg-amber-300 px-2 font-bold"
+          >
+            Difficile
+          </button>
+        </div>
+      </div>
+      <div
+        class="flex w-full flex-col gap-10 rounded-xl bg-white/90 px-8 py-5 shadow-2xl drop-shadow-2xl sm:w-10/12 lg:w-1/2"
+      >
+        <table class="border-collapse text-center">
+          <caption class="mb-2 text-xl font-bold">
+            Meilleurs temps :
+          </caption>
+          <thead>
+            <tr>
+              <th class="border border-black px-2">
+                Nombre total de caractères
+              </th>
+              <th class="border border-black px-2">Caractères par minutes</th>
+              <th class="border border-black px-2">Temps</th>
+            </tr>
+          </thead>
+          <tbody id="table"></tbody>
+        </table>
+      </div>
+      <div
+        class="flex w-full flex-col items-center justify-center sm:w-10/12 lg:w-1/2"
+      >
+        <div
+          class="flex min-w-full flex-col gap-6 rounded-xl bg-white/90 px-8 py-5 shadow-2xl drop-shadow-2xl"
+        >
+          <h3 class="text-center text-xl font-bold">
+            Recopie cette phrase aussi vite que possible :
+          </h3>
+          <p id="textContent" class="text-center text-lg">
+            Je ne pense pas qu’il y ait de bonne ou de mauvaise situation. Moi,
+            si je devais résumer ma vie aujourd’hui avec vous, je dirais que
+            c’est d’abord des rencontres. Des gens qui m’ont tendu la main
+            peut-être à un moment où je ne pouvais pas, où j’étais seul chez
+            moi. Et c’est assez curieux de se dire que les hasards, les
+            rencontres forgent une destinée… Parce que quand on a le goût de la
+            chose, quand on a le goût de la chose bien faite, le beau geste,
+            parfois on ne trouve pas l’interlocuteur en face, je dirais, le
+            miroir qui vous aide à avancer.
+          </p>
+          <p
+            id="chrono"
+            class="m-auto rounded-lg border-2 border-solid border-gray-400 bg-amber-300 px-2 py-2 text-center text-5xl font-bold"
+          >
+            00:00:00
+          </p>
+          <textarea
+            class="h-[200px] w-full rounded-lg bg-white/90 p-2 shadow-2xl drop-shadow-2xl"
+            placeholder="Commence a écrire pour lancer le chrono ! 
+Clique sur valider quand tu as finis."
+            name=""
+            id="tapedText"
+          ></textarea>
+
+          <div class="flex justify-center gap-2">
+            <button
+              id="reset"
+              class="w-fit rounded-lg border-2 border-solid border-gray-400 bg-amber-300 px-2 font-bold"
+            >
+              Recommencer
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
