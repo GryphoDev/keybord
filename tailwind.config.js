@@ -5,7 +5,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        machine: "url('../image/machineAEcrire.jpg')",
+        machine: "url('../image/fondModerne.jpg')",
+        bureau: "url('../image/bureau.jpg')",
       },
     },
   },
